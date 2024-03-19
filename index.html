@@ -1,0 +1,71 @@
+<html>
+
+<head>
+  <title>Counter</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<style>
+  #k {
+    display: flex;
+  }
+</style>
+
+<body>
+
+  <div id="main">
+    <center>
+      <div id="k">
+        <button id="increment"> + </button>
+        <div id="displayCounter"></div><br>
+        <button id="decrement"> - </button>
+      </div>
+
+
+    </center>
+    <button id="reset">Reset</button><br><br>
+  </div>
+</body>
+
+</html>
+
+
+
+<script>
+
+  var Counter = {
+    count: 0,
+    incrementCounter: function () {
+      if (this.count < 10) {
+        return this.count = this.count + 1;
+      } else {
+        alert("you can click only 10 time`s");
+        return this.count;
+      }
+
+    },
+    decrementCounter: function () {
+      if (this.count > 0) {
+        return this.count = this.count - 1;
+      } else {
+        return this.count = 0;
+      }
+    },
+    resetCounter: function () {
+      return this.count = 0;
+    }
+
+  };
+
+  var displayCout = document.getElementById('displayCounter');
+  displayCout.innerHTML = `counter :-0`;
+  document.getElementById('increment').onclick = function () {
+    displayCout.innerHTML = Counter.incrementCounter();
+  }
+  document.getElementById('decrement').onclick = function () {
+    displayCout.innerHTML = Counter.decrementCounter();
+  }
+  document.getElementById('reset').onclick = function () {
+    displayCout.innerHTML = Counter.resetCounter();
+  }
+
+</script>

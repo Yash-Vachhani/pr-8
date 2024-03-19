@@ -1,0 +1,36 @@
+    #main{
+     margin : 0 auto;
+     text-align:center;
+     padding:5% 10%;
+   }
+   #displayCounter{
+     font-size:100px;
+    
+     
+   }
+   #increment{
+    padding:10px 15px;
+    font-size:25px;
+    background: green; 
+     color:#bd0000;
+     border: 1px dotted yellowgreen;
+     margin:0px auto;
+     
+   }
+   #decrement{
+    padding:10px 15px;
+    font-size:25px;
+    background: green; 
+     color:#bd0000;
+     border: 1px dotted yellowgreen;
+     margin:0px auto;   
+   }
+   #reset{
+    padding:10px 15px;
+    font-size:25px;
+    background: green; 
+     color:#bd0000;
+     border: 1px dotted rgb(205, 143, 50);
+     margin:5px;
+   }
+   
